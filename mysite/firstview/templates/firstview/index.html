@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		
+		<title>Test_Kimn</title>
+
+        <link rel="stylesheet" href="static/css/bootstrap_min.css">
+        <link rel="stylesheet" href="static/css/font.css">
+		<link rel="stylesheet" href="static/css/magnific-popup.css">
+		<link rel="stylesheet" href="static/css/simplebar.css">
+		<link rel="stylesheet" href="static/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="static/css/jquery.css">
+        <link rel="stylesheet" class="back-color" href="static/css/style-dark.css">
+		<link rel="stylesheet" href="static/css/style-demo.css">
+
+		<link rel="stylesheet" class="posit-nav" href="static/css/settings/left-nav.css" />
+		<link rel="stylesheet" class="theme-color" href="static/css/settings/orange.css" />
+		<link rel="stylesheet" class="box-st" href="static/css/settings/circle-box.css" />
+		
+    </head>
+    <body>
+
+		<div id="home">
+  		<div id="about">
+    	<div id="resume">
+			
+			<div class="header-mobile">
+                <a class="header-toggle"><i class="fas"> M </i></a>
+                <h2>Kim_n</h2>
+            </div>
+
+			<nav class="header-main" data-simplebar>
+          		<ul>
+					<li data-position="top">
+					</li>
+					<li data-position="top">
+					</li>
+					<li data-tooltip="home" data-position="top">
+            			<a href="#home" class="icon-h"><h4>Home</h4></a>
+					</li>
+					<li data-tooltip="about" data-position="top">
+            			<a href="#about" class="icon-h"><h4>About</h4></a>
+					</li>
+					<li data-tooltip="resume" data-position="top">
+            			<a href="#resume" class="icon-h"><h4>Board</h4></a>
+					</li>
+	
+          		</ul>
+			 </nav>
+			
+          	<div class="pt-home" style="background-image: url('static/img/mount.jpg')">
+             	<section>
+
+					<div class="banner">
+  						<h1>Kim Ni Eun</h1>
+						<p class="cd-headline rotate-1">
+							<span>I dream of becoming a developer</span>
+						</p>
+					</div>
+			  	</section>  
+          	</div>
+			
+			<div class="page pt-about" data-simplebar>
+				<section class="container">
+
+					<div class="header-page mt-70 mob-mt">
+						<h2>About Me</h2>
+						<span></span>
+					</div>
+				
+					<div class="row mt-100">
+						<div class="col-lg-12 col-sm-12">
+    						<div class="info box-1">
+								<div class="row">
+									<div class="col-lg-9 col-sm-8">
+										<h4>Kim Ni Eun</h4>
+										<div class="loc">
+											<i class="fas">Who?</i> 
+										</div>
+										<p>Hello! I'm Kim Ni-Eun. I'm trying to be a developer.
+										</p>
+										<p>I started a blog recently and it's more fun than I thought.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row mt-100">
+						<div class="col-md-12">
+							<div class="header-box mb-50">
+								<h3>Interest</h3>
+							</div>
+						</div>
+						<div class="col-lg-6 col-sm-6">
+							<div class="service box-1 mb-40">
+								<h4>Design</h4>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-sm-6">
+							<div class="service box-2 mb-40">
+								<h4>Coding</h4>
+							</div>
+						</div>
+					</div>
+					</section>
+				</div>
+
+          	<div class="page pt-resume" data-simplebar>
+            	<section class="container">
+					<div class="header-page mt-70 mob-mt">
+						<h2>Board</h2>
+    					<span></span>
+					</div>
+					
+					<div class="row mt-100">
+					
+						<div class="col-sm-12">
+						
+							<div class="experience box-1">
+							
+							{% for people in peoples %}
+
+								<div class="item">
+									<div class="main">
+										<h4>{{people.name}}</h4>
+										<p><i class="far"></i>{{people.number}}번</p>
+									</div>
+									<p>{{people.intro}}</p>
+								</div>
+							{% endfor %}
+							</div>
+						</div>					
+					</div>	
+			  	</section>
+         	</div>
+
+        </div>
+      	</div>
+    	</div>
+  		</div>
+		</div>
+		</div>
+		
+		<!-- All Script -->
+		<script src="static/js/jquery.min.js"></script>
+		<script src="static/js/isotope.pkgd.min.js"></script>
+		<script src="static/js/bootstrap.min.js"></script>
+		<script src="static/js/simplebar.js"></script>
+		<script src="static/js/owl.carousel.min.js"></script>
+		<script src="static/js/jquery.magnific-popup.min.js"></script>
+		<script src="static/js/jquery.animatedheadline.min.js"></script>
+		<script src="static/js/jquery.easypiechart.js"></script>
+		<script src="static/js/jquery.validation.js"></script>
+		<script src="static/js/tilt.js"></script>
+        <script src="static/js/main.js"></script>
+		<script src="static/js/main-demo.js"></script>
+		
+    </body>
+</html>
