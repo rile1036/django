@@ -9,3 +9,4 @@ def index(request):
 	context = {'peoples':peoples}	
 
 	return render(request, 'firstview/index.html', context)
+
